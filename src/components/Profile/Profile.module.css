@@ -1,0 +1,78 @@
+.cardContainer {
+  width: 400px;
+  height: 450px;
+  background-color: rgb(203, 203, 198);
+  border-radius: 8px;
+  border: 3px solid black;
+  overflow: hidden;
+}
+
+.userData {
+  background-color: #ffffffdd;
+  padding: 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  overflow: hidden;
+  border-bottom: 2px solid rgb(105, 105, 103);
+}
+
+.image {
+  width: 170px;
+  height: 170px;
+  background-color: rgb(30, 30, 29);
+  border-radius: 50%;
+}
+
+.name {
+  color: black;
+  font-weight: bold;
+  font-size: 35px;
+  margin: 10px;
+}
+
+.tag,
+.location {
+  color: rgb(123, 127, 122);
+  font-size: 30px;
+  margin: 0;
+}
+
+.location {
+  margin-top: 10px;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 25px;
+  color: black;
+}
+
+.item {
+  width: calc((100% - 2 * 20px) / 3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  position: relative;
+}
+
+.item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: -10px;
+  bottom: -25px;
+  width: 2px;
+  background-color: rgb(105, 105, 103);
+}
+.numbers {
+  font-weight: bold;
+  margin-top: 5px;
+}
