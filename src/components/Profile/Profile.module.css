@@ -1,10 +1,10 @@
 .cardContainer {
-  width: 400px;
-  height: 450px;
+  width: 100%;
   background-color: rgb(203, 203, 198);
   border-radius: 8px;
   border: 3px solid black;
   overflow: hidden;
+  margin-bottom: 30px;
 }
 
 .userData {
@@ -45,13 +45,11 @@
 }
 
 .list {
-  margin: 0;
-  padding: 0;
-  padding-top: 20px;
   display: flex;
   justify-content: space-evenly;
   font-size: 25px;
   color: black;
+  align-items: center;
 }
 
 .item {
@@ -61,17 +59,19 @@
   align-items: center;
   padding: 0;
   position: relative;
+  padding: 20px 0;
 }
 
 .item:not(:last-child)::after {
   content: "";
   position: absolute;
-  top: -20px;
+  top: 0;
   right: -10px;
   bottom: -25px;
   width: 2px;
-  background-color: rgb(105, 105, 103);
+  background-color: rgb(74, 73, 73);
 }
+
 .numbers {
   font-weight: bold;
   margin-top: 5px;
